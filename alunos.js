@@ -1,4 +1,11 @@
 
-let alunos = require ('./DATABASE/dados.json')
+const alunos = require ('./DATABASE/dados.json')
 
-console.log (alunos)
+
+// Aqui vai os alunos com idade maior que 18 anos (alunosMaioresDeDezoito)
+ const alunosMaioresDeDezoito = () => {
+  console.log(alunos.filter((alunos) => {
+    return alunos.idade > 18
+  }));
+}
+alunosMaioresDeDezoito();
